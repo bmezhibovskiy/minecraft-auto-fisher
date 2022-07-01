@@ -743,24 +743,35 @@
             <objects>
                 <viewController title="Minecraft Auto Fisher" id="XfG-lQ-9wD" customClass="ViewController" customModule="NoColorClickerGUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="785" height="232"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-9d-FAD">
-                                <rect key="frame" x="18" y="20" width="444" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-9d-FAD">
+                                <rect key="frame" x="18" y="20" width="749" height="192"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" id="a4K-VG-OeR">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <mutableString key="title">Instructions: 
-Make sure to give the app screen recording permissions in settings
-On starting the app, a square will appear on screen. 
-Switch to Minecraft, and position the square over the bobber.
-When the bobber is centered in the square, press ` to start auto fishing</mutableString>
+1. Give this app (NoColorClickerGUI) permissions in System Preferences -&gt; Security &amp; Privacy -&gt; Privacy:
+    - Accessibility
+    - Input Monitoring
+    - Screen Recording
+
+2. On starting this app, a square will appear on screen. 
+3. Switch to Minecraft, and position the square over the bobber.
+4. Toggle ` (backtick) to start auto fishing. The square will appear thicker.
+5. Make sure to stop the auto fisher before doing anything else, by pressing ` again.
+6. To close this app and remove the square, press the close button of this window.</mutableString>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Uim-9d-FAD" secondAttribute="bottom" constant="20" symbolic="YES" id="BSw-YK-Byy"/>
+                            <constraint firstAttribute="trailing" secondItem="Uim-9d-FAD" secondAttribute="trailing" constant="20" symbolic="YES" id="gHD-OR-Bvo"/>
+                            <constraint firstItem="Uim-9d-FAD" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="snF-Qg-4Hh"/>
+                            <constraint firstItem="Uim-9d-FAD" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="tj4-15-VeV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
