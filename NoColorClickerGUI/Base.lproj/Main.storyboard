@@ -11,9 +11,9 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="NoColorClickerGUI" id="1Xt-HY-uBw">
+                            <menuItem title="Minecraft Auto Fisher" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="NoColorClickerGUI" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Minecraft Auto Fisher" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
                                         <menuItem title="About NoColorClickerGUI" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -683,8 +683,8 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="NoColorClickerGUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Minecraft Auto Fisher" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -738,13 +738,29 @@
             </objects>
             <point key="canvasLocation" x="709" y="1003"/>
         </scene>
-        <!--View Controller-->
+        <!--Minecraft Auto Fisher-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="NoColorClickerGUI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Minecraft Auto Fisher" id="XfG-lQ-9wD" customClass="ViewController" customModule="NoColorClickerGUI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uim-9d-FAD">
+                                <rect key="frame" x="18" y="20" width="444" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="a4K-VG-OeR">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <mutableString key="title">Instructions: 
+Make sure to give the app screen recording permissions in settings
+On starting the app, a square will appear on screen. 
+Switch to Minecraft, and position the square over the bobber.
+When the bobber is centered in the square, press ` to start auto fishing</mutableString>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

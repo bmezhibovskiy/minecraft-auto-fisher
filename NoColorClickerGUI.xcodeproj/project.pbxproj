@@ -12,6 +12,7 @@
 		DA6A20D6286CE261001946EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6A20D5286CE261001946EE /* Assets.xcassets */; };
 		DA6A20D9286CE261001946EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6A20D7286CE261001946EE /* Main.storyboard */; };
 		DA6A20E3286DEBB2001946EE /* OverlayWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A20E2286DEBB2001946EE /* OverlayWindowController.swift */; };
+		DA6A20E5286F4142001946EE /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A20E4286F4142001946EE /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DA6A20D8286CE261001946EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA6A20DA286CE261001946EE /* NoColorClickerGUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoColorClickerGUI.entitlements; sourceTree = "<group>"; };
 		DA6A20E2286DEBB2001946EE /* OverlayWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayWindowController.swift; sourceTree = "<group>"; };
+		DA6A20E4286F4142001946EE /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				DA6A20D1286CE25E001946EE /* AppDelegate.swift */,
 				DA6A20D3286CE25E001946EE /* ViewController.swift */,
 				DA6A20E2286DEBB2001946EE /* OverlayWindowController.swift */,
+				DA6A20E4286F4142001946EE /* MainWindowController.swift */,
 				DA6A20D5286CE261001946EE /* Assets.xcassets */,
 				DA6A20D7286CE261001946EE /* Main.storyboard */,
 				DA6A20DA286CE261001946EE /* NoColorClickerGUI.entitlements */,
@@ -136,6 +139,7 @@
 			files = (
 				DA6A20D4286CE25E001946EE /* ViewController.swift in Sources */,
 				DA6A20E3286DEBB2001946EE /* OverlayWindowController.swift in Sources */,
+				DA6A20E5286F4142001946EE /* MainWindowController.swift in Sources */,
 				DA6A20D2286CE25E001946EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
